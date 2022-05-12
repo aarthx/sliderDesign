@@ -34,4 +34,7 @@ function imagemPosterior() {
     mudarImagem('slide', `img/cupcake${imgAtual}.jpg`)
 }
 
+
+
+
 //clearInterval(intervalo)
