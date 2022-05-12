@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+}
+
+.caixa-slide {
+    background-color: #A1E8AF;  
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides {
+    width: 50vw;
+    height: 75vh;
+    background: #747C92;
+    box-shadow: 10px 10px 10px #3A2449;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    position: fixed;
+    left: 68%;
+    top: 83%;
+}
+
+button {
+    margin-top: 25%;
+    width: 3vw;
+    height: 5vh;
+    font-size: 200%;
+    font-weight: 600;
+    border-color:black;
+    opacity: 0.5;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px black;
+}
+
+button:hover {
+    background-color: lightgray;
+    border-color:black;
+    opacity: 100;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+.slide {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
