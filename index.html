@@ -6,14 +6,15 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <header>
-            <h2>Desafio de nivel fácil do JS app ideas</h2>
+        <header class="links">
+            <div type="button" id="return" class="button" name="return" onclick="voltar();">⏎</div>
+            <h2>Desafio de nivel fácil do JS app ideas</h2>   
         </header>
         <div class="caixa-slide">
             <h1>Slider Design</h1>
             <div class="slides">
                 <img src="img/cupcake1.jpg" alt="slide" class="slide" id="slide">
-                <div class="branco"></div>
+                <div id="branco" class="branco"></div>
                 <div class="buttons">
                     <button id="anterior" onclick="imagemAnterior()">◄</button>
                     <button id="proximo" onclick="imagemPosterior()">►</button>

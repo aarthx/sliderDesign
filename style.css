@@ -8,6 +8,11 @@ header {
     color: white;
     font-size: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 5vh;
 }
 
 h1 {
@@ -25,11 +30,16 @@ h2 {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
+.caixa-slide h1 {
+    margin-top: 1%;
+}
+
 .slides {
+    
     position: relative;
     width: 50vw;
     height: 75vh;
@@ -44,7 +54,7 @@ h2 {
 .buttons {
     position: fixed;
     left: 68%;
-    top: 83%;
+    top: 82%;
 }
 
 button {
@@ -77,8 +87,7 @@ button:active {
     height: 100%;
 }
 
-
-.slides .branco {
+.branco {
     position: absolute;
     object-fit: cover;
     background-color: white;
@@ -87,12 +96,27 @@ button:active {
     opacity: 0;
 }
 
-#slide {
-    animation-duration: 4s;
+@keyframes passando {
+    0% { opacity: 0;}
+    50% { opacity: 1;}
+    100% { opacity: 0}
 }
 
-@keyframes fadeOut {
-    0%   { opacity: 1; }
-    100% { opacity: 0; }
+#return {
+    background-color: #4CAF50; /* Green */
+    opacity: 1;
+    border: none;
+    color: white;
+    text-align: center;
+    font-style: bold;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3.5vh;
+    cursor: pointer;
+    box-shadow: 3px 3px black;
+    margin: 0 1vw;
+    height: 4vh;
+    width: 4vw;
+    border-radius: 10px;
 }
-
